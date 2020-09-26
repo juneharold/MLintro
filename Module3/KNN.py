@@ -34,7 +34,7 @@ print('Test set:', X_test.shape,  y_test.shape)
 from sklearn.neighbors import KNeighborsClassifier
 k = 4
 #Train Model and Predict
-neigh = KNeighborsClassifier(n_neighbors = k).fit(X_train,y_train)
+neigh = KNeighborsClassifier(n_neighbors=k).fit(X_train, y_train)
 neigh
 
 yhat = neigh.predict(X_test)
