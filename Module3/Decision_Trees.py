@@ -38,13 +38,10 @@ print('Train set:', X_train.shape,  y_train.shape)
 print('Test set:', X_test.shape,  y_test.shape)
 
 drugTree = DecisionTreeClassifier(criterion="entropy", max_depth=4)
-drugTree
 
 drugTree.fit(X_train, y_train)
 
 predTree = drugTree.predict(X_test)
-predTree[:5]
-y_test[:5]
 
 from sklearn import metrics
 import matplotlib.pyplot as plt

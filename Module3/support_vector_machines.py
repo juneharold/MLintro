@@ -37,7 +37,6 @@ clf = svm.SVC(kernel='rbf')
 clf.fit(X_train, y_train)
 
 yhat = clf.predict(X_test)
-yhat [0:5]
 
 # Evaluation
 from sklearn.metrics import classification_report, confusion_matrix
